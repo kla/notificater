@@ -2,10 +2,10 @@
   $container = null
   messages = []
   defaultOptions =
-    displayDuration: 5000
-    sticky:          false   # don't automatically close if true
-    closeable:       true    # show close button or not on sticky notifications
-    offset:          [6, 0]  # offset [top, left]
+    duration:   5000
+    sticky:     false   # don't automatically close if true
+    closeable:  true    # show close button or not on sticky notifications
+    offset:     [6, 0]  # offset [top, left]
 
   add = (message, options={}) ->
     messages.push($.extend {}, {message: message}, defaultOptions, options)
@@ -37,7 +37,7 @@
 
     renderNotification(msg = messages.shift())
     $container.fadeIn()
-    $container.delay(msg.displayDuration).fadeOut(render) unless msg.sticky
+    $container.delay(msg.duration).fadeOut(render) unless msg.sticky
 
   renderNotification = (msg) ->
     $container.find(".message").html(msg.message)
