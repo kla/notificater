@@ -4,7 +4,7 @@
     $container = null;
     messages = [];
     defaultOptions = {
-      displayDuration: 5000,
+      duration: 5000,
       sticky: false,
       closeable: true,
       offset: [6, 0]
@@ -43,9 +43,7 @@
       if ($container.is(":visible") || messages.length <= 0) return;
       renderNotification(msg = messages.shift());
       $container.fadeIn();
-      if (!msg.sticky) {
-        return $container.delay(msg.displayDuration).fadeOut(render);
-      }
+      if (!msg.sticky) return $container.delay(msg.duration).fadeOut(render);
     };
     renderNotification = function(msg) {
       var $close;

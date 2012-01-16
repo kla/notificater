@@ -6,7 +6,7 @@
     sticky:     false   # don't automatically close if true
     closeable:  true    # show close button or not on sticky notifications
     offset:     [6, 0]  # offset [top, left]
-
+ 
   add = (message, options={}) ->
     messages.push($.extend {}, {message: message}, defaultOptions, options)
     createContainer() unless $container
