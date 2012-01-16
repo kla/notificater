@@ -36,8 +36,9 @@
 			text-decoration: none;
 		}
 		</style>
+		<link rel="stylesheet" type="text/css" href="jquery.notificater.css"/>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-		<script type="text/javascript" src="notificater.js"></script>
+		<script type="text/javascript" src="jquery.notificater.js"></script>
 		<script type="text/javascript">
 		$(function() {
 			$("#demo code").click(function() {
@@ -52,6 +53,9 @@
 		<p>A jQuery plugin for displaying <em>small</em> notification messages.</p>
 
 		<h2>Usage &amp; Demo</h2>
+		<code>&lt;link rel="stylesheet" href="jquery.notificater.css"/&gt;</code>
+		<code>&lt;script type="text/javascript" src="jquery.notificater.js"&gt;&lt;/script&gt;</code>
+		<br/>
 		<div id="demo">
 			<code>$.notificate("normal 5 second message")</code>
 			<code>$.notificate("quick 1 second message", {displayDuration: 1000})</code>
@@ -61,7 +65,8 @@
 
 		<h2>Rails 3.1 Usage</h2>
 		<code>gem "notificater-rails"</code>
-		<code>//= require "jquery.notificater"</code>
+		<code>//= require "jquery.notificater.js"</code>
+		<code>//= require "jquery.notificater.css"</code>
 
 		<h2>Download &amp; Source</h2>
 		<ul id="download">
