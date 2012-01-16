@@ -4,3 +4,7 @@
 guard "coffeescript", :input => "." do
   watch(%r{(.+\.coffee)$})
 end
+
+guard "coffeescript", :input => ".", :output => "vendor/assets/javascripts" do
+  watch(%r{(.+\.coffee)$})
+end
