@@ -18,7 +18,7 @@
       return render();
     };
     createContainer = function() {
-      $(document.body).append("<div id=\"notifications\" style=\"display:none;position:fixed;top:0;left:50%\">\n  <div class=\"message-container\" style=\"position:relative;color:#444;padding:3px 8px;background-color:#fee9cc\">\n    <span class=\"message\"></span>\n    <a href=\"#\" class=\"notification-close\" style=\"display:none;padding-left:0.5em\">x</a>\n  </div>\n</div>");
+      $(document.body).append("<div id=\"notifications\" style=\"display:none;position:fixed;top:0;left:50%\">\n  <div class=\"message-container\" style=\"position:relative\">\n    <span class=\"message\"></span>\n    <a href=\"#\" class=\"notification-close\" style=\"display:none\">x</a>\n  </div>\n</div>");
       $container = $("#notifications");
       return $container.find(".notification-close").click(function() {
         $container.fadeOut(render);

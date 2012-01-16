@@ -15,9 +15,9 @@
   createContainer = ->
     $(document.body).append """
       <div id="notifications" style="display:none;position:fixed;top:0;left:50%">
-        <div class="message-container" style="position:relative;color:#444;padding:3px 8px;background-color:#fee9cc">
+        <div class="message-container" style="position:relative">
           <span class="message"></span>
-          <a href="#" class="notification-close" style="display:none;padding-left:0.5em">x</a>
+          <a href="#" class="notification-close" style="display:none">x</a>
         </div>
       </div>
       """
