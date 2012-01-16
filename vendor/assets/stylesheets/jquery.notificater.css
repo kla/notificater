@@ -1,8 +1,1 @@
-#notifications .message-container {
-	color: #444;
-	padding: 3px 8px;
-	background-color: #fee9cc;
-}
-.notification-close {
-	padding-left:0.5em
-}
+../../../jquery.notificater.css
