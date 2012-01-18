@@ -7,5 +7,5 @@ Gem::Specification.new do |s|
   s.summary     = "Use notificater.js with rails 3.1"
   s.files       = Dir["lib/**/*"] + Dir["vendor/**/*"] + ["README"]
 
-  s.add_dependency("railties", "~> 3.1.0")
+  s.add_dependency("railties", ">= 3.1.0")
 end
